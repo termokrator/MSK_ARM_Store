@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="169080f2-0ee3-44f1-ad4f-c0f4a06cbc98">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.РежимВводаКоличества" category="Ref">
+				<xr:TypeId>318d2677-2fa0-4d43-802d-c2a3ede953e4</xr:TypeId>
+				<xr:ValueId>5cfd68e3-ed76-41e9-9808-75e298ff9e4b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.РежимВводаКоличества" category="Manager">
+				<xr:TypeId>3b61e1ec-3e69-4287-886d-ad584344288d</xr:TypeId>
+				<xr:ValueId>cf34d07c-8c7e-4af2-a062-2c69f55a7a61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.РежимВводаКоличества" category="List">
+				<xr:TypeId>254d87a1-608c-4e8b-83be-8559dc0c20cf</xr:TypeId>
+				<xr:ValueId>64be9e3b-6758-438f-af2a-264a1f7d58d7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РежимВводаКоличества</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим ввода количества</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="2282677b-5371-40f6-a7d8-288efb9ea1b3">
+				<Properties>
+					<Name>Автоматический</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматический</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bf5cdc36-1aa9-4b57-b700-6bd94e6a43aa">
+				<Properties>
+					<Name>Ручной</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ручной</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

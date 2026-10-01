@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Список</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПроверкаПоискаПоШК" id="87">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПроверкаПоискаПоШК</CommandName>
+				<ExtendedTooltip name="ФормаПроверкаПоискаПоШКРасширеннаяПодсказка" id="88"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКнопок" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГруппаКнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="46"/>
+		</UsualGroup>
+		<Table name="СписокТранспортныхЕдиниц" id="47">
+			<Representation>Tree</Representation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокТранспортныхЕдиниц</DataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокТранспортныхЕдиницКонтекстноеМеню" id="48">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокТранспортныхЕдиницКонтекстноеМенюПоискТЕПоШК" id="92">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоискТЕПоШК</CommandName>
+						<ExtendedTooltip name="СписокТранспортныхЕдиницКонтекстноеМенюПоискТЕПоШКРасширеннаяПодсказка" id="93"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокТранспортныхЕдиницКоманднаяПанель" id="49">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокТранспортныхЕдиницРасширеннаяПодсказка" id="50"/>
+			<SearchStringAddition name="СписокТранспортныхЕдиницСтрокаПоиска" id="51">
+				<AdditionSource>
+					<Item>СписокТранспортныхЕдиниц</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТранспортныхЕдиницСтрокаПоискаКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="СписокТранспортныхЕдиницСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокТранспортныхЕдиницСостояниеПросмотра" id="54">
+				<AdditionSource>
+					<Item>СписокТранспортныхЕдиниц</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТранспортныхЕдиницСостояниеПросмотраКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="СписокТранспортныхЕдиницСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокТранспортныхЕдиницУправлениеПоиском" id="57">
+				<AdditionSource>
+					<Item>СписокТранспортныхЕдиниц</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТранспортныхЕдиницУправлениеПоискомКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="СписокТранспортныхЕдиницУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокТранспортныхЕдиницВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокТранспортныхЕдиницДатаВходящегоДокумента" id="94">
+					<DataPath>СписокТранспортныхЕдиниц.ДатаВходящегоДокумента</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата вх. док.</v8:content>
+						</v8:item>
+					</Title>
+					<Width>25</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СписокТранспортныхЕдиницДатаВходящегоДокументаКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницДатаВходящегоДокументаРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницДатаЗагрузки" id="75">
+					<DataPath>СписокТранспортныхЕдиниц.ДатаЗагрузки</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокТранспортныхЕдиницДатаЗагрузкиКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницДатаЗагрузкиРасширеннаяПодсказка" id="77"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницСсылкаПТУ" id="78">
+					<DataPath>СписокТранспортныхЕдиниц.СсылкаПТУ</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокТранспортныхЕдиницСсылкаПТУКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницСсылкаПТУРасширеннаяПодсказка" id="80"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницТранспортнаяЕдиница" id="60">
+					<DataPath>СписокТранспортныхЕдиниц.ТранспортнаяЕдиница</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕ</v8:content>
+						</v8:item>
+					</Title>
+					<Width>60</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СписокТранспортныхЕдиницТранспортнаяЕдиницаКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницТранспортнаяЕдиницаРасширеннаяПодсказка" id="62"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницДатаДокумента" id="66">
+					<DataPath>СписокТранспортныхЕдиниц.ДатаДокумента</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокТранспортныхЕдиницДатаДокументаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницДатаДокументаРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницНомерДокумента" id="69">
+					<DataPath>СписокТранспортныхЕдиниц.НомерДокумента</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокТранспортныхЕдиницНомерДокументаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницНомерДокументаРасширеннаяПодсказка" id="71"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницНомерДокументаОформление" id="72">
+					<DataPath>СписокТранспортныхЕдиниц.НомерДокументаОформление</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокТранспортныхЕдиницНомерДокументаОформлениеКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницНомерДокументаОформлениеРасширеннаяПодсказка" id="74"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницНомерСкладскогоДокумента" id="84">
+					<DataPath>СписокТранспортныхЕдиниц.НомерСкладскогоДокумента</DataPath>
+					<ContextMenu name="СписокТранспортныхЕдиницНомерСкладскогоДокументаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницНомерСкладскогоДокументаРасширеннаяПодсказка" id="86"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницСтатусПриемки" id="81">
+					<DataPath>СписокТранспортныхЕдиниц.СтатусПриемки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокТранспортныхЕдиницСтатусПриемкиКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницСтатусПриемкиРасширеннаяПодсказка" id="83"/>
+				</LabelField>
+				<LabelField name="СписокТранспортныхЕдиницКонтрагент" id="89">
+					<DataPath>СписокТранспортныхЕдиниц.Контрагент</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокТранспортныхЕдиницКонтрагентКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СписокТранспортныхЕдиницКонтрагентРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТранспортныеЕдиницы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокТранспортныхЕдиниц" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список транспортных единиц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокТранспортныхЕдиниц.КоличествоСтрок</Field>
+				<Field>~СписокТранспортныхЕдиниц.КоличествоСтрокОформление</Field>
+				<Field>~СписокТранспортныхЕдиниц.НаименованиеСклада</Field>
+				<Field>~СписокТранспортныхЕдиниц.ПриемкаГМ</Field>
+				<Field>~СписокТранспортныхЕдиниц.Транзит</Field>
+				<Field>~СписокТранспортныхЕдиниц.Экспресс</Field>
+				<Field>СписокТранспортныхЕдиниц.ДатаВходящегоДокумента</Field>
+				<Field>СписокТранспортныхЕдиниц.Контрагент</Field>
+				<Field>СписокТранспортныхЕдиниц.НомерСкладскогоДокумента</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСписокТранспортныхЕдиниц.ТранспортнаяЕдиница КАК ТранспортнаяЕдиница,
+	РегистрСведенийСписокТранспортныхЕдиниц.СсылкаПТУ КАК СсылкаПТУ,
+	РегистрСведенийСписокТранспортныхЕдиниц.СтатусПриемки КАК СтатусПриемки,
+	РегистрСведенийСписокТранспортныхЕдиниц.ДатаДокумента КАК ДатаДокумента,
+	РегистрСведенийСписокТранспортныхЕдиниц.НомерДокумента КАК НомерДокумента,
+	РегистрСведенийСписокТранспортныхЕдиниц.НомерДокументаОформление КАК НомерДокументаОформление,
+	РегистрСведенийСписокТранспортныхЕдиниц.ДатаЗагрузки КАК ДатаЗагрузки,
+	РегистрСведенийСписокТранспортныхЕдиниц.НомерСкладскогоДокумента КАК НомерСкладскогоДокумента,
+	РегистрСведенийСписокТранспортныхЕдиниц.Контрагент КАК Контрагент,
+	РегистрСведенийСписокТранспортныхЕдиниц.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента
+ИЗ
+	РегистрСведений.СписокТранспортныхЕдиниц КАК РегистрСведенийСписокТранспортныхЕдиниц
+ГДЕ
+	НЕ РегистрСведенийСписокТранспортныхЕдиниц.СтатусПриемки В (&amp;ИсключаемыеСтатусы)</QueryText>
+				<MainTable>InformationRegister.СписокТранспортныхЕдиниц</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаВходящегоДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НомерДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ДатаДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Экспресс</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Транзит</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Blue</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТОХ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ДатаВходящегоДокумента</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверкаПоискаПоШК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка поиска по ШК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка поиска по ШК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаПоискаПоШК</Action>
+		</Command>
+		<Command name="ПоискТЕПоШК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск ТЕ по ШК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск ТЕПо ШК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискТЕПоШК</Action>
+		</Command>
+	</Commands>
+</Form>

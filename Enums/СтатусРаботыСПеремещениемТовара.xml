@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="ab594abf-e8e7-4cb5-99e1-ae927459e3da">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусРаботыСПеремещениемТовара" category="Ref">
+				<xr:TypeId>107b3176-09b0-486f-bbb6-91a755e08965</xr:TypeId>
+				<xr:ValueId>19681b35-c297-4920-90dd-902d403bd187</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусРаботыСПеремещениемТовара" category="Manager">
+				<xr:TypeId>94d19699-2b86-4e96-beb2-4d29c80a3afa</xr:TypeId>
+				<xr:ValueId>5f7c42f4-31a7-4a5d-988a-0d545be3314b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусРаботыСПеремещениемТовара" category="List">
+				<xr:TypeId>ed21f5b6-89ff-4c1c-8d85-9aba2d78eb25</xr:TypeId>
+				<xr:ValueId>c07200a9-8e77-4174-916e-6aed6c7bcee9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусРаботыСПеремещениемТовара</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус работы с перемещением товара</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="d37a1580-2037-4564-9ca8-ff10a49ec0b8">
+				<Properties>
+					<Name>ПоискЯчейкиОткуда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск ячейки откуда</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="22765c2e-b74a-44b4-8aeb-ab675c33105a">
+				<Properties>
+					<Name>ПоискЯчейкиКуда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск ячейки куда</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52d03521-8725-4875-9fa7-56cd424f459a">
+				<Properties>
+					<Name>ПоискНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск номенклатуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a7c6b8e6-8891-46b1-ad87-3d703310433e">
+				<Properties>
+					<Name>ПросмотрТоваровВЯчейке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр товаров в ячейке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="415060fa-8b5c-4402-abbb-5568f9f4f8b8">
+				<Properties>
+					<Name>ШКнеНайденВЯчейке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК не найден в ячейке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="00f2f136-d5b1-44f1-bce5-2bc7604d4e98">
+				<Properties>
+					<Name>ВводКоличестваНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод количества номенклатуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="593c8153-f306-41dd-8d4b-1ddb09fbcc08">
+				<Properties>
+					<Name>ОпределеныЯчейкиДляПоискаТовара</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определены ячейки для поиска товара</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

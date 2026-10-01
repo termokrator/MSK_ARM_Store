@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Размещение не завершено</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>use</VerticalScroll>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ОписаниеДокумента" id="77">
+			<DataPath>Объект.ОписаниеДокумента</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ОписаниеДокументаКонтекстноеМеню" id="78"/>
+			<ExtendedTooltip name="ОписаниеДокументаРасширеннаяПодсказка" id="79"/>
+		</InputField>
+		<InputField name="ТекстСообщения" id="80">
+			<DataPath>Объект.ТекстСообщения</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<Height>4</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="82"/>
+		</InputField>
+		<Table name="СписокТоваровВБуфереРазмещения" id="22">
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокТоваровВБуфереРазмещения</DataPath>
+			<RowPictureDataPath>СписокТоваровВБуфереРазмещения.DefaultPicture</RowPictureDataPath>
+			<BackColor>web:Beige</BackColor>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокТоваровВБуфереРазмещенияКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="СписокТоваровВБуфереРазмещенияКоманднаяПанель" id="24">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="СписокТоваровВБуфереРазмещенияСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>СписокТоваровВБуфереРазмещения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТоваровВБуфереРазмещенияСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокТоваровВБуфереРазмещенияСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>СписокТоваровВБуфереРазмещения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТоваровВБуфереРазмещенияСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокТоваровВБуфереРазмещенияУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>СписокТоваровВБуфереРазмещения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТоваровВБуфереРазмещенияУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="СписокТоваровВБуфереРазмещенияГруппа2" id="46">
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияГруппа2РасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<ColumnGroup name="СписокТоваровВБуфереРазмещенияГруппа1" id="35">
+							<ReadOnly>true</ReadOnly>
+							<Height>7</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияГруппа1РасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<ColumnGroup name="СписокТоваровВБуфереРазмещенияГруппа3" id="48">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияГруппа3РасширеннаяПодсказка" id="49"/>
+									<ChildItems>
+										<LabelField name="СписокТоваровВБуфереРазмещенияКодПроизводителяТовара" id="74">
+											<DataPath>СписокТоваровВБуфереРазмещения.КодПроизводителяТовара</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<AutoCellHeight>true</AutoCellHeight>
+											<Width>25</Width>
+											<MaxWidth>50</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="СписокТоваровВБуфереРазмещенияКодПроизводителяТовараКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияКодПроизводителяТовараРасширеннаяПодсказка" id="76"/>
+										</LabelField>
+										<LabelField name="СписокТоваровВБуфереРазмещенияЯчейка" id="50">
+											<DataPath>СписокТоваровВБуфереРазмещения.Ячейка</DataPath>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="СписокТоваровВБуфереРазмещенияЯчейкаКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияЯчейкаРасширеннаяПодсказка" id="52"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="СписокТоваровВБуфереРазмещенияНаименованиеТовара" id="43">
+									<DataPath>СписокТоваровВБуфереРазмещения.НаименованиеТовара</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoCellHeight>true</AutoCellHeight>
+									<ShowInHeader>false</ShowInHeader>
+									<Height>5</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="СписокТоваровВБуфереРазмещенияНаименованиеТовараКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияНаименованиеТовараРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="СписокТоваровВБуфереРазмещенияПроизводитель" id="40">
+									<DataPath>СписокТоваровВБуфереРазмещения.Производитель</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ShowInHeader>false</ShowInHeader>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+									<ContextMenu name="СписокТоваровВБуфереРазмещенияПроизводительКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="СписокТоваровВБуфереРазмещенияПроизводительРасширеннаяПодсказка" id="42"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<Button name="РазместитьТовары" id="10">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<CommandName>Form.Command.РазместитьТовары</CommandName>
+			<TextColor>web:Black</TextColor>
+			<BackColor>web:LightGreen</BackColor>
+			<BorderColor>web:LightGreen</BorderColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Shape>Usual</Shape>
+			<ShapeRepresentation>Always</ShapeRepresentation>
+			<ExtendedTooltip name="РазместитьТоварыРасширеннаяПодсказка" id="11"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПриемкаКоллективная</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокТоваровВБуфереРазмещения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список товаров в буфере размещения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокТоваровВБуфереРазмещения.Заглушка</Field>
+				<Field>СписокТоваровВБуфереРазмещения.КодПроизводителяТовара</Field>
+				<Field>СписокТоваровВБуфереРазмещения.КоличествоТовара</Field>
+				<Field>СписокТоваровВБуфереРазмещения.НаименованиеТовара</Field>
+				<Field>СписокТоваровВБуфереРазмещения.Объект</Field>
+				<Field>СписокТоваровВБуфереРазмещения.Производитель</Field>
+				<Field>СписокТоваровВБуфереРазмещения.Сообщение</Field>
+				<Field>СписокТоваровВБуфереРазмещения.СсылкаТовара</Field>
+				<Field>СписокТоваровВБуфереРазмещения.Ячейка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫРАЗИТЬ("" КАК СТРОКА(255)) КАК Сообщение,
+	СписокТоваровВБуфереРазмещение.Объект КАК Объект,
+	СписокТоваровВБуфереРазмещение.СсылкаТовара КАК СсылкаТовара,
+	СписокТоваровВБуфереРазмещение.НаименованиеТовара КАК НаименованиеТовара,
+	СписокТоваровВБуфереРазмещение.КоличествоТовара КАК КоличествоТовара,
+	СписокТоваровВБуфереРазмещение.КодПроизводителяТовара КАК КодПроизводителяТовара,
+	СписокТоваровВБуфереРазмещение.Производитель КАК Производитель,
+	СписокТоваровВБуфереРазмещение.Ячейка КАК Ячейка,
+	ВЫРАЗИТЬ("" КАК СТРОКА(10)) КАК Заглушка
+ИЗ
+	РегистрСведений.СписокТоваровВБуфереРазмещение КАК СписокТоваровВБуфереРазмещение
+
+УПОРЯДОЧИТЬ ПО
+	СписокТоваровВБуфереРазмещение.НомерЗаписи</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РазместитьТовары" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разместить товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разместить товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазместитьТовары</Action>
+		</Command>
+		<Command name="Команда1" id="2"/>
+	</Commands>
+	<Parameters>
+		<Parameter name="НомерДокумента">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ДокументГУИД">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="НомерДокументаОформление">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

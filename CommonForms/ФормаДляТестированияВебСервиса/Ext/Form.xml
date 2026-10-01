@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группировка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппировкаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="СистемнаяИнфорация" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системная инфорация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системная инфорация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СистемнаяИнфорацияРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="УникальныйИндентификатор" id="55">
+							<DataPath>Индентификатор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>УникИнд</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<Height>2</Height>
+							<MultiLine>false</MultiLine>
+							<ContextMenu name="УникальныйИндентификаторКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="УникальныйИндентификаторРасширеннаяПодсказка" id="57"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПолучитьСписокДокументов" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список документов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПолучитьСписокДокументовРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<Button name="ТестПолучитьСписокДокументов" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьСписокДокументов</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тест ПолучитьСписокДокументов</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ТестПолучитьСписокДокументовРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="WorkПолучитьСписокДокументов" id="15">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.WorkПолучитьСписокДокументов</CommandName>
+							<ExtendedTooltip name="WorkПолучитьСписокДокументовРасширеннаяПодсказка" id="16"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПолучитьСписокТоваровДокумента" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список товаров документа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список товаров документа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПолучитьСписокТоваровДокументаРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<Button name="ТестПолучитьСписокТоваровДокумента" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьСписокТоваровДокумента</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тест ПолучитьСписокТоваров Документа</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ТестПолучитьСписокТоваровДокументаРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<InputField name="ГУИДДокументаПТУ" id="10">
+							<DataPath>ГУИДДокументаПТУ</DataPath>
+							<ContextMenu name="ГУИДДокументаПТУКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ГУИДДокументаПТУРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<Button name="WorkПолучитьСписокТоваровДокументаПТУ" id="17">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.WorkПолучитьСписокТоваровДокументаПТУ</CommandName>
+							<ExtendedTooltip name="WorkПолучитьСписокТоваровДокументаПТУРасширеннаяПодсказка" id="18"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ОписаниеТовара" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание товара</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание товара</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОписаниеТовараРасширеннаяПодсказка" id="20"/>
+					<ChildItems>
+						<Button name="ПолучитьОписаниеТовара" id="21">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьОписаниеТовара</CommandName>
+							<ExtendedTooltip name="ПолучитьОписаниеТовараРасширеннаяПодсказка" id="22"/>
+						</Button>
+						<InputField name="ГУИДТовара" id="23">
+							<DataPath>ГУИДТовара</DataPath>
+							<ContextMenu name="ГУИДТовараКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ГУИДТовараРасширеннаяПодсказка" id="25"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПоискаТовараПоШтрихКоду" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиска товара по штрих коду</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиска товара по штрих коду</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПоискаТовараПоШтрихКодуРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="ШтрихкодТовара" id="34">
+							<DataPath>Штрихкод</DataPath>
+							<ContextMenu name="ШтрихкодТовараКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ШтрихкодТовараРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ГУИДокумента2" id="37">
+							<DataPath>ГУИДокумента2</DataPath>
+							<ContextMenu name="ГУИДокумента2КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ГУИДокумента2РасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<Button name="ПоискТовараПоШтрихкоду" id="32">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПоискТовараПоШтрихкоду</CommandName>
+							<ExtendedTooltip name="ПоискТовараПоШтрихкодуРасширеннаяПодсказка" id="33"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ДобавитьШтрихкод" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Присвоить штрихкод товару</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить штрихкод</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДобавитьШтрихкодРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Button name="WorkДобавитьШтрихкод" id="42">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.WorkДобавитьШтрихкод</CommandName>
+							<ExtendedTooltip name="WorkДобавитьШтрихкодРасширеннаяПодсказка" id="43"/>
+						</Button>
+						<InputField name="Штрихкод" id="47">
+							<DataPath>Штрихкод</DataPath>
+							<ContextMenu name="ШтрихкодКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ШтрихкодРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ГУИДТовара1" id="50">
+							<DataPath>ГУИДТовара</DataPath>
+							<ContextMenu name="ГУИДТовара1КонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ГУИДТовара1РасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="РезультатВебСервиса" id="5">
+			<DataPath>РезультатВебСервиса</DataPath>
+			<ContextMenu name="РезультатВебСервисаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="РезультатВебСервисаРасширеннаяПодсказка" id="7"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РезультатВебСервиса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат веб сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГУИДДокументаПТУ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГУИДДокумента ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГУИДТовара" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГУИДТовара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Штрихкод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Штрихкод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГУИДокумента2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГУИДокумента2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Индентификатор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьСписокДокументов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСписокДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьСписокТоваровДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список товаров документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список товаров документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСписокТоваровДокумента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="WorkПолучитьСписокДокументов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work получить список документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work получить список документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>WorkПолучитьСписокДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="WorkПолучитьСписокТоваровДокументаПТУ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work получить список товаров документа ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work получить список товаров документа ПТУ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>WorkПолучитьСписокТоваровДокументаПТУ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьОписаниеТовара" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить описание товара</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить описание товара</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьОписаниеТовара</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоискТовараПоШтрихкоду" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск товара по штрихкоду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск товара по штрихкоду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискТовараПоШтрихкоду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="WorkДобавитьШтрихкод" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work добавить штрихкод</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work добавить штрихкод</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>WorkДобавитьШтрихкод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

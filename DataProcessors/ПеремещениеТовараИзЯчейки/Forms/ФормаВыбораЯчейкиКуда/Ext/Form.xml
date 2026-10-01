@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор ячейки</v8:content>
+		</v8:item>
+	</Title>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ЯчейкаОткуда" id="37">
+			<DataPath>Объект.ЯчейкаОткуда</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрана ячейка "Откуда"</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="ЯчейкаОткудаКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ЯчейкаОткудаРасширеннаяПодсказка" id="39"/>
+		</LabelField>
+		<LabelDecoration name="ЗаголовокЯчейки" id="4">
+			<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отсканируйте ячейку куда:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ЗаголовокЯчейкиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЗаголовокЯчейкиРасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="7">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="ЯчейкаКуда" id="34">
+					<DataPath>Объект.ЯчейкаКуда</DataPath>
+					<ContextMenu name="ЯчейкаКудаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЯчейкаКудаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<Button name="ПолучитьЯчейку" id="9">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьЯчейку</CommandName>
+					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПолучитьЯчейкуРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПеремещениеТовараИзЯчейки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьЯчейку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ячейку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЯчейку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Список товаров документа</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="МенюПоказатьРазмещенные" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>2:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<ExtendedTooltip name="МенюПоказатьРазмещенныеРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="МенюСкрыватьРазмещенные" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<ExtendedTooltip name="МенюСкрыватьРазмещенныеРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="24">
+			<Group>Vertical</Group>
+			<VerticalSpacing>None</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<Table name="Шапка" id="26">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Шапка</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ШапкаКонтекстноеМеню" id="27"/>
+					<AutoCommandBar name="ШапкаКоманднаяПанель" id="28">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="29"/>
+					<SearchStringAddition name="ШапкаСтрокаПоиска" id="30">
+						<AdditionSource>
+							<Item>Шапка</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ШапкаСтрокаПоискаКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="ШапкаСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ШапкаСостояниеПросмотра" id="33">
+						<AdditionSource>
+							<Item>Шапка</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ШапкаСостояниеПросмотраКонтекстноеМеню" id="34"/>
+						<ExtendedTooltip name="ШапкаСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ШапкаУправлениеПоиском" id="36">
+						<AdditionSource>
+							<Item>Шапка</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ШапкаУправлениеПоискомКонтекстноеМеню" id="37"/>
+						<ExtendedTooltip name="ШапкаУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<ColumnGroup name="ШапкаГруппа2" id="39">
+							<ExtendedTooltip name="ШапкаГруппа2РасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<ColumnGroup name="ШапкаГруппа1" id="41">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ШапкаГруппа1РасширеннаяПодсказка" id="42"/>
+									<ChildItems>
+										<InputField name="ШапкаЗаголовокСкладскогоДокумента" id="46">
+											<DataPath>Шапка.ЗаголовокСкладскогоДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ШапкаЗаголовокСкладскогоДокументаКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ШапкаЗаголовокСкладскогоДокументаРасширеннаяПодсказка" id="48"/>
+										</InputField>
+										<InputField name="ШапкаНомерСкладскогоДокумента" id="43">
+											<DataPath>Шапка.НомерСкладскогоДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ШапкаНомерСкладскогоДокументаКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ШапкаНомерСкладскогоДокументаРасширеннаяПодсказка" id="45"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ШапкаСтатусСтрокИКоличества" id="49">
+									<DataPath>Шапка.СтатусСтрокИКоличества</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ШапкаСтатусСтрокИКоличестваКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ШапкаСтатусСтрокИКоличестваРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТоварыДокумента" id="4">
+			<SelectionMode>SingleRow</SelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<SearchOnInput>Use</SearchOnInput>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>ТоварыДокумента</DataPath>
+			<RowPictureDataPath>ТоварыДокумента.DefaultPicture</RowPictureDataPath>
+			<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<SearchStringLocation>Top</SearchStringLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ТоварыДокументаКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТоварыДокументаКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТоварыДокументаРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТоварыДокументаСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТоварыДокумента</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыДокументаСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТоварыДокументаСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТоварыДокументаСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТоварыДокумента</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыДокументаСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТоварыДокументаСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТоварыДокументаУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТоварыДокумента</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыДокументаУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТоварыДокументаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТоварыДокументаВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТоварыДокументаОписаниеТовара" id="17">
+					<DataPath>ТоварыДокумента.ОписаниеТовара</DataPath>
+					<AutoCellHeight>true</AutoCellHeight>
+					<ContextMenu name="ТоварыДокументаОписаниеТовараКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТоварыДокументаОписаниеТовараРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПриемкаКоллективная</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТоварыДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ТоварыДокумента.НормализованныйКод</Field>
+				<Field>ТоварыДокумента.СсылкаПТУ</Field>
+				<Field>ТоварыДокумента.СсылкаТовара</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СписокТоваровДокументаПТУ.СсылкаПТУ КАК СсылкаПТУ,
+	СписокТоваровДокументаПТУ.СсылкаТовара КАК СсылкаТовара,
+	"""" + СписокТоваровДокументаПТУ.КодПроизводителяТовара + """ " + СписокТоваровДокументаПТУ.Производитель + " " + СписокТоваровДокументаПТУ.НаименованиеТовара + " (" + СписокТоваровДокументаПТУ.ЕдИзмНаименование + ")" 
+	+ " " + СписокТоваровДокументаПТУ.НормализованныйКод КАК ОписаниеТовара,
+	СписокТоваровДокументаПТУ.КоличествоТовара КАК КоличествоТовара,
+	СписокТоваровДокументаПТУ.КоличествоТовараНабрано КАК КоличествоТовараНабрано,
+	СписокТоваровДокументаПТУ.КоличествоВРазмещении КАК КоличествоВРазмещении,
+	СписокТоваровДокументаПТУ.НормализованныйКод КАК НормализованныйКод
+ИЗ
+	РегистрСведений.СписокТоваровДокументаПТУ КАК СписокТоваровДокументаПТУ
+ГДЕ
+	СписокТоваровДокументаПТУ.СсылкаПТУ = &amp;СсылкаПТУ
+	И СписокТоваровДокументаПТУ.КоличествоТовара - (СписокТоваровДокументаПТУ.КоличествоТовараНабрано + СписокТоваровДокументаПТУ.КоличествоВРазмещении) &gt; 0
+
+УПОРЯДОЧИТЬ ПО
+	ОписаниеТовара</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Шапка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСкладскогоДокумента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер складского документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаголовокСкладскогоДокумента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок складского документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусСтрокИКоличества" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус строк и количества</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ДокументГУИД">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

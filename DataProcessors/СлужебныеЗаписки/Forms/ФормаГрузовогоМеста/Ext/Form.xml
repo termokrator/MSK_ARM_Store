@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Служебные записки</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="ШапкаСтатус" id="55">
+					<DataPath>ШапкаСтатус</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ШапкаСтатусКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ШапкаСтатусРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<UsualGroup name="ГруппаШапкаГрузоместа" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка грузоместа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка грузоместа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаГрузоместаРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<InputField name="ШапкаГрузовыхМестВсего" id="60">
+							<DataPath>ШапкаГрузовыхМестВсего</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ШапкаГрузовыхМестВсегоКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ШапкаГрузовыхМестВсегоРасширеннаяПодсказка" id="62"/>
+						</InputField>
+						<InputField name="ШапкаГрузовыхМестПогружено" id="63">
+							<DataPath>ШапкаГрузовыхМестПогружено</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ШапкаГрузовыхМестПогруженоКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ШапкаГрузовыхМестПогруженоРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СписокГрузовыхМестГруппа" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список грузовых мест группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список грузовых мест группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокГрузовыхМестГруппаРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Table name="СписокГрузовыхМест" id="37">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокГрузовыхМест</DataPath>
+					<RowPictureDataPath>СписокГрузовыхМест.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокГрузовыхМестКонтекстноеМеню" id="38">
+						<ChildItems>
+							<Button name="СписокГрузовыхМестВыбрать" id="66">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Выбрать</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выбрать</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокГрузовыхМестВыбратьРасширеннаяПодсказка" id="67"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СписокГрузовыхМестКоманднаяПанель" id="39"/>
+					<ExtendedTooltip name="СписокГрузовыхМестРасширеннаяПодсказка" id="40"/>
+					<SearchStringAddition name="СписокГрузовыхМестСтрокаПоиска" id="41">
+						<AdditionSource>
+							<Item>СписокГрузовыхМест</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГрузовыхМестСтрокаПоискаКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="СписокГрузовыхМестСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокГрузовыхМестСостояниеПросмотра" id="44">
+						<AdditionSource>
+							<Item>СписокГрузовыхМест</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГрузовыхМестСостояниеПросмотраКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="СписокГрузовыхМестСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокГрузовыхМестУправлениеПоиском" id="47">
+						<AdditionSource>
+							<Item>СписокГрузовыхМест</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГрузовыхМестУправлениеПоискомКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="СписокГрузовыхМестУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ШтрихкодГрузовогоМеста" id="50">
+							<DataPath>СписокГрузовыхМест.ШтрихкодГрузовогоМеста</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ШтрихкодГрузовогоМестаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ШтрихкодГрузовогоМестаРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПодвалСообщение" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ПодвалСообщение</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПодвалСообщениеКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПодвалСообщениеКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПодвалСообщениеРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПодвалСообщениеСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ПодвалСообщение</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалСообщениеСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПодвалСообщениеСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодвалСообщениеСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ПодвалСообщение</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалСообщениеСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПодвалСообщениеСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодвалСообщениеУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ПодвалСообщение</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалСообщениеУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПодвалСообщениеУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ПодвалСообщениеСообщениеДляПользователя" id="27">
+					<DataPath>ПодвалСообщение.СообщениеДляПользователя</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодвалСообщениеСообщениеДляПользователяКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ПодвалСообщениеСообщениеДляПользователяРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="Подвал" id="14">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Подвал</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПодвалКонтекстноеМеню" id="15"/>
+			<AutoCommandBar name="ПодвалКоманднаяПанель" id="16">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="17"/>
+			<SearchStringAddition name="ПодвалСтрокаПоиска" id="18">
+				<AdditionSource>
+					<Item>Подвал</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалСтрокаПоискаКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ПодвалСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодвалСостояниеПросмотра" id="21">
+				<AdditionSource>
+					<Item>Подвал</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалСостояниеПросмотраКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ПодвалСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодвалУправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>Подвал</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодвалУправлениеПоискомКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ПодвалУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ПодвалГруппа1" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подвал группа1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подвал группа1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПодвалГруппа1РасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="ПодвалФИОСотрудинка" id="30">
+							<DataPath>Подвал.ФИОСотрудинка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодвалФИОСотрудинкаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПодвалФИОСотрудинкаРасширеннаяПодсказка" id="32"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СлужебныеЗаписки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ГрузовоеМестоГУИД" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Грузовое место ГУИД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Подвал" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ОписаниеРежимаВводаКоличества" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание режима ввода количества</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФИОСотрудинка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОСотрудинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПодвалСообщение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СообщениеДляПользователя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение для пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокГрузовыхМест" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список грузовых мест</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокГрузовыхМест.СлужебнаяЗапискаГУИД</Field>
+				<Field>СписокГрузовыхМест.СсылкаСлужебнаяЗаписка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СписокГрузовыхМестСлужебныеЗаписки.ШтрихкодГрузовогоМеста КАК ШтрихкодГрузовогоМеста,
+	СписокГрузовыхМестСлужебныеЗаписки.СсылкаСлужебнаяЗаписка КАК СсылкаСлужебнаяЗаписка,
+	СписокГрузовыхМестСлужебныеЗаписки.Погружено КАК Погружено
+ИЗ
+	РегистрСведений.СписокГрузовыхМестСлужебныеЗаписки КАК СписокГрузовыхМестСлужебныеЗаписки
+ГДЕ
+	НЕ СписокГрузовыхМестСлужебныеЗаписки.Погружено</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ШапкаСтатус" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаГрузовыхМестВсего" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка грузовых мест всего</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаГрузовыхМестПогружено" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка грузовых мест погружено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШтрихКод" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Штрих код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоОтсканирГрузовыхМестНаТСД" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сколько отсканирован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоГрузовыхМестВсего" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество грузовых мест всего</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="СлужебнаяЗапискаГУИД">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="СлужебнаяЗапискаНомер">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проведение ПТУ</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьНепроведенныеДокументыПТУ" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьНепроведенныеДокументыПТУ</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.ОбновлениеДанных</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаПолучитьНепроведенныеДокументыПТУРасширеннаяПодсказка" id="34"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКнопок" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГруппаКнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<Button name="Экспрессы" id="41">
+					<Type>UsualButton</Type>
+					<Check>true</Check>
+					<CommandName>Form.Command.КнЭкпрессыНажатие</CommandName>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<ExtendedTooltip name="ЭкспрессыРасширеннаяПодсказка" id="42"/>
+				</Button>
+				<Button name="Пополнения" id="43">
+					<Type>UsualButton</Type>
+					<Check>true</Check>
+					<CommandName>Form.Command.КнПополненияНажатие</CommandName>
+					<TextColor>style:ToolTipTextColor</TextColor>
+					<ExtendedTooltip name="ПополненияРасширеннаяПодсказка" id="44"/>
+				</Button>
+				<Button name="ПоступленияТОХ" id="53">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнТОХНажатие</CommandName>
+					<TextColor>style:AccentColor</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТОХ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПоступленияТОХРасширеннаяПодсказка" id="54"/>
+				</Button>
+				<Button name="КнТЕНажатие" id="60">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнТЕНажатие</CommandName>
+					<TextColor>#96863E</TextColor>
+					<ExtendedTooltip name="КнТЕНажатиеРасширеннаяПодсказка" id="61"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокНепроведенныхПТУ" id="1">
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокНепроведенныхПТУ</DataPath>
+			<RowPictureDataPath>СписокНепроведенныхПТУ.DefaultPicture</RowPictureDataPath>
+			<BackColor>web:Beige</BackColor>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокНепроведенныхПТУКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокНепроведенныхПТУКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокНепроведенныхПТУРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокНепроведенныхПТУСтрокаПоиска" id="5">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокНепроведенныхПТУ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНепроведенныхПТУСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокНепроведенныхПТУСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокНепроведенныхПТУСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокНепроведенныхПТУ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНепроведенныхПТУСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокНепроведенныхПТУСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокНепроведенныхПТУУправлениеПоиском" id="11">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокНепроведенныхПТУ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНепроведенныхПТУУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокНепроведенныхПТУУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокНепроведенныхПТУВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="СписокНепроведенныхПТУГруппа" id="14">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список непроведенных ПТУГруппа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокНепроведенныхПТУГруппаРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<ColumnGroup name="СписокНепроведенныхПТУГруппаНомерИГМ" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список непроведенных ПТУГруппа номер ИГМ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список непроведенных ПТУГруппа номер ИГМ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="СписокНепроведенныхПТУГруппаНомерИГМРасширеннаяПодсказка" id="56"/>
+							<ChildItems>
+								<InputField name="СписокНепроведенныхПТУНомерСкладскогоДокумента" id="16">
+									<DataPath>СписокНепроведенныхПТУ.НомерСкладскогоДокумента</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<Width>25</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="СписокНепроведенныхПТУНомерСкладскогоДокументаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СписокНепроведенныхПТУНомерСкладскогоДокументаРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<LabelField name="СписокНепроведенныхПТУПриемкаГМ" id="57">
+									<DataPath>СписокНепроведенныхПТУ.ПриемкаГМ</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<ContextMenu name="СписокНепроведенныхПТУПриемкаГМКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СписокНепроведенныхПТУПриемкаГМРасширеннаяПодсказка" id="59"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="СписокНепроведенныхПТУКонтрагент" id="19">
+							<DataPath>СписокНепроведенныхПТУ.Контрагент</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ShowInHeader>false</ShowInHeader>
+							<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="СписокНепроведенныхПТУКонтрагентКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СписокНепроведенныхПТУКонтрагентРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<ColumnGroup name="СписокНепроведенныхПТУГруппа1" id="22">
+							<ExtendedTooltip name="СписокНепроведенныхПТУГруппа1РасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<LabelField name="СписокНепроведенныхПТУДатаВходящегоДокумента" id="47">
+									<DataPath>СписокНепроведенныхПТУ.ДатаВходящегоДокумента</DataPath>
+									<ContextMenu name="СписокНепроведенныхПТУДатаВходящегоДокументаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СписокНепроведенныхПТУДатаВходящегоДокументаРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="СписокНепроведенныхПТУНаименованиеСклада" id="50">
+							<DataPath>СписокНепроведенныхПТУ.НаименованиеСклада</DataPath>
+							<ContextMenu name="СписокНепроведенныхПТУНаименованиеСкладаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="СписокНепроведенныхПТУНаименованиеСкладаРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТоварыВПути</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокНепроведенныхПТУ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список непроведенных ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокНепроведенныхПТУ.ДатаДокумента</Field>
+				<Field>СписокНепроведенныхПТУ.КоличествоСтрок</Field>
+				<Field>СписокНепроведенныхПТУ.КоличествоСтрокОформление</Field>
+				<Field>СписокНепроведенныхПТУ.Контрагент</Field>
+				<Field>СписокНепроведенныхПТУ.НаименованиеСклада</Field>
+				<Field>СписокНепроведенныхПТУ.НомерДокумента</Field>
+				<Field>СписокНепроведенныхПТУ.НомерДокументаОформление</Field>
+				<Field>СписокНепроведенныхПТУ.НомерСкладскогоДокумента</Field>
+				<Field>СписокНепроведенныхПТУ.ПриемкаГМ</Field>
+				<Field>СписокНепроведенныхПТУ.СсылкаПТУ</Field>
+				<Field>СписокНепроведенныхПТУ.Транзит</Field>
+				<Field>СписокНепроведенныхПТУ.Экспресс</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СписокНепроведенныхДокументовПТУ.СсылкаПТУ КАК СсылкаПТУ,
+	СписокНепроведенныхДокументовПТУ.Экспресс КАК Экспресс,
+	СписокНепроведенныхДокументовПТУ.КоличествоСтрок КАК КоличествоСтрок,
+	СписокНепроведенныхДокументовПТУ.НомерДокумента КАК НомерДокумента,
+	СписокНепроведенныхДокументовПТУ.ДатаДокумента КАК ДатаДокумента,
+	СписокНепроведенныхДокументовПТУ.НомерСкладскогоДокумента + ВЫБОР
+		КОГДА СписокНепроведенныхДокументовПТУ.Транзит
+			ТОГДА "(Т)"
+		ИНАЧЕ ""
+	КОНЕЦ КАК НомерСкладскогоДокумента,
+	СписокНепроведенныхДокументовПТУ.Контрагент КАК Контрагент,
+	СписокНепроведенныхДокументовПТУ.НомерДокументаОформление КАК НомерДокументаОформление,
+	СписокНепроведенныхДокументовПТУ.КоличествоСтрокОформление КАК КоличествоСтрокОформление,
+	СписокНепроведенныхДокументовПТУ.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
+	СписокНепроведенныхДокументовПТУ.НаименованиеСклада + СписокНепроведенныхДокументовПТУ.КоличествоСтрокОформление КАК НаименованиеСклада,
+	СписокНепроведенныхДокументовПТУ.ТОХ КАК ТОХ,
+	ВЫБОР
+		КОГДА СписокНепроведенныхДокументовПТУ.ПриемкаГМ
+			ТОГДА "ГМ"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ПриемкаГМ,
+	СписокНепроведенныхДокументовПТУ.Транзит КАК Транзит
+ИЗ
+	РегистрСведений.СписокНепроведенныхДокументовПТУ КАК СписокНепроведенныхДокументовПТУ
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ОтбиратьДокументы
+				ТОГДА СписокНепроведенныхДокументовПТУ.Экспресс = &amp;ПоказыватьЭкспрессы
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И СписокНепроведенныхДокументовПТУ.ТОХ = &amp;ОтбиратьТОХ</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаВходящегоДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НомерДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ДатаДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Экспресс</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Транзит</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Blue</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТОХ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьНепроведенныеДокументыПТУ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить непроведенные документы ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить непроведенные документы ПТУ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьНепроведенныеДокументыПТУ</Action>
+		</Command>
+		<Command name="КнЭкпрессыНажатие" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспрессы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кн экпрессы нажатие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнЭкпрессыНажатие</Action>
+		</Command>
+		<Command name="КнПополненияНажатие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пополнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кн пополнения нажатие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнПополненияНажатие</Action>
+		</Command>
+		<Command name="КнТОХНажатие" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТОХ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступления ТОХ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнТОХНажатие</Action>
+		</Command>
+		<Command name="КнТЕНажатие" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЕ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список транспортных единиц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнТЕНажатие</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="55a36507-eb25-4f4f-8164-02465ff20b8d">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПриемкаГрузовыхМестИзРазгрузкиАвто" category="Object">
+				<xr:TypeId>fe7b84b8-4edd-4a89-b51e-c105bbce7bbd</xr:TypeId>
+				<xr:ValueId>75edb576-95fe-47e4-b25c-36894ecb29e5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПриемкаГрузовыхМестИзРазгрузкиАвто" category="Manager">
+				<xr:TypeId>46765f7a-e5c7-411d-97ed-e0c794128b1f</xr:TypeId>
+				<xr:ValueId>0c978741-25af-4da1-b284-ff8840957105</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПриемкаГрузовыхМестИзРазгрузкиАвто</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемка грузовых мест из разгрузки авто</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выставление принятых гррузовых мест(Разгрузка авто) на маршрут
+</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаМаршрутаИзРазгрузкаАвто</Form>
+			<Form>ФормаГрузовогоМеста</Form>
+			<Form>ФормаСписокМаршрутовИзРазгрузкаАвто</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

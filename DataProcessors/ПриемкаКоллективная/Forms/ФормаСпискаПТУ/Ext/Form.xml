@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Приемка товаров</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПолучитьДокументыПТУ" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+				<CommandName>Form.Command.ПолучитьДокументыПТУ</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.ОбновлениеДанных</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Получ.док.</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПолучитьДокументыПТУРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="101">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="102"/>
+			<ChildItems>
+				<Button name="КнТЕНажатие" id="96">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнТЕНажатие</CommandName>
+					<TextColor>style:FormTextColor</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по ШК транспортной единицы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнТЕНажатиеРасширеннаяПодсказка" id="97"/>
+				</Button>
+				<Button name="ПроверкаВЧЗ" id="106">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьПТУНаПроверкеВЧЗ</CommandName>
+					<TextColor>style:FormTextColor</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка в ЧЗ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПроверкаВЧЗРасширеннаяПодсказка" id="107"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="75">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<Button name="Поиск" id="77">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<CommandName>Form.Command.Поиск</CommandName>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ПоискРасширеннаяПодсказка" id="78"/>
+				</Button>
+				<InputField name="ЗначениеДляПоиска" id="72">
+					<DataPath>ЗначениеДляПоиска</DataPath>
+					<Visible>false</Visible>
+					<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+					<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+					<ContextMenu name="ЗначениеДляПоискаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ЗначениеДляПоискаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<LabelDecoration name="НадписьПоискПоНомеруДокументаПТУ" id="103">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по номеру документа ПТУ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьПоискПоНомеруДокументаПТУКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="НадписьПоискПоНомеруДокументаПТУРасширеннаяПодсказка" id="105"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокПТУ" id="3">
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<Header>false</Header>
+			<VerticalScrollBar>UseAlways</VerticalScrollBar>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<SearchOnInput>Use</SearchOnInput>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокПТУ</DataPath>
+			<RowPictureDataPath>СписокПТУ.DefaultPicture</RowPictureDataPath>
+			<BackColor>web:Beige</BackColor>
+			<SearchStringLocation>Top</SearchStringLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокПТУКонтекстноеМеню" id="4">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="СписокПТУКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокПТУРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокПТУСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>СписокПТУ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск по документам приемки</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск по документам приемки</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<ContextMenu name="СписокПТУСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокПТУСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПТУСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>СписокПТУ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПТУСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокПТУСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПТУУправлениеПоиском" id="13">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокПТУ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПТУУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокПТУУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокПТУВыбор</Event>
+				<Event name="OnGetDataAtServer">СписокПТУПриПолученииДанныхНаСервере</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="СписокПТУГруппа" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список ПТУГруппа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список ПТУГруппа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокПТУГруппаРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<ColumnGroup name="СписокПТУГруппа2" id="88">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="СписокПТУГруппа2РасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<LabelField name="СписокПТУСтатусЧЗ" id="90">
+									<DataPath>СписокПТУ.СтатусЧЗ</DataPath>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+									</Border>
+									<BorderColor>style:SpecialTextColor</BorderColor>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="СписокПТУСтатусЧЗКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="СписокПТУСтатусЧЗРасширеннаяПодсказка" id="92"/>
+								</LabelField>
+								<LabelField name="СписокПТУСтатус" id="64">
+									<DataPath>СписокПТУ.Статус</DataPath>
+									<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="СписокПТУСтатусКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="СписокПТУСтатусРасширеннаяПодсказка" id="66"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="СписокПТУГруппа1" id="67">
+							<ExtendedTooltip name="СписокПТУГруппа1РасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<InputField name="СписокПТУКомментарийКСтатусу" id="47">
+									<DataPath>СписокПТУ.КомментарийКСтатусу</DataPath>
+									<Font ref="style:NormalTextFont" height="7" kind="StyleItem"/>
+									<ContextMenu name="СписокПТУКомментарийКСтатусуКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СписокПТУКомментарийКСтатусуРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<LabelField name="СписокПТУКонтрагент" id="85">
+									<DataPath>СписокПТУ.Контрагент</DataPath>
+									<ContextMenu name="СписокПТУКонтрагентКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="СписокПТУКонтрагентРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<LabelField name="СписокПТУЗаглушка" id="69">
+									<DataPath>СписокПТУ.Заглушка</DataPath>
+									<Visible>false</Visible>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalStretch>true</VerticalStretch>
+									<Font ref="style:NormalTextFont" height="7" kind="StyleItem"/>
+									<ContextMenu name="СписокПТУЗаглушкаКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СписокПТУЗаглушкаРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="СписокПТУНомерСкладскогоДокумента" id="79">
+							<DataPath>СписокПТУ.НомерСкладскогоДокумента</DataPath>
+							<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="СписокПТУНомерСкладскогоДокументаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="СписокПТУНомерСкладскогоДокументаРасширеннаяПодсказка" id="81"/>
+						</LabelField>
+						<LabelField name="СписокПТУНомерДокументаОформление" id="58">
+							<DataPath>СписокПТУ.НомерДокументаОформление</DataPath>
+							<Font ref="style:NormalTextFont" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="СписокПТУНомерДокументаОформлениеКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="СписокПТУНомерДокументаОформлениеРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+						<LabelField name="СписокПТУТипПриемки" id="82">
+							<DataPath>СписокПТУ.ТипПриемки</DataPath>
+							<TextColor>web:SandyBrown</TextColor>
+							<Font ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="СписокПТУТипПриемкиКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="СписокПТУТипПриемкиРасширеннаяПодсказка" id="84"/>
+						</LabelField>
+						<CheckBoxField name="СписокПТУПоставкаОтВнешнегоПоставщика" id="93">
+							<DataPath>СписокПТУ.ПоставкаОтВнешнегоПоставщика</DataPath>
+							<Visible>false</Visible>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокПТУПоставкаОтВнешнегоПоставщикаКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="СписокПТУПоставкаОтВнешнегоПоставщикаРасширеннаяПодсказка" id="95"/>
+						</CheckBoxField>
+						<LabelField name="СписокПТУСсылка" id="98">
+							<DataPath>СписокПТУ.Ссылка</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокПТУСсылкаКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="СписокПТУСсылкаРасширеннаяПодсказка" id="100"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПриемкаКоллективная</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокПТУ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокПТУ.ДокументПТУ</Field>
+				<Field>~СписокПТУ.КоличествоМаркировокТоваров</Field>
+				<Field>~СписокПТУ.КоличествоОтсканированныхМаркировки</Field>
+				<Field>~СписокПТУ.КоличествоСтрок</Field>
+				<Field>~СписокПТУ.КоличествоСтрокКодовМаркировки</Field>
+				<Field>~СписокПТУ.КоличествоСтрокОтсканированноКодовМаркировки</Field>
+				<Field>СписокПТУ.DefaultPicture</Field>
+				<Field>СписокПТУ.ДатаДокумента</Field>
+				<Field>СписокПТУ.ДокументТребуетсяМаркировка</Field>
+				<Field>СписокПТУ.ЕстьСтрокиВБуфереКладовщика</Field>
+				<Field>СписокПТУ.ЕстьСтрокиВБуфереМаркировок</Field>
+				<Field>СписокПТУ.Количество</Field>
+				<Field>СписокПТУ.КоличествоОжидаемыхМаркировок</Field>
+				<Field>СписокПТУ.КоличествоОтсканированныхМаркировок</Field>
+				<Field>СписокПТУ.КоличествоТоваровСМаркировкой</Field>
+				<Field>СписокПТУ.КомментарийКСтатусу</Field>
+				<Field>СписокПТУ.НомерДокумента</Field>
+				<Field>СписокПТУ.НомерДокументаОформление</Field>
+				<Field>СписокПТУ.НомерСкладскогоДокумента</Field>
+				<Field>СписокПТУ.ПараметрСортировки</Field>
+				<Field>СписокПТУ.Ссылка</Field>
+				<Field>СписокПТУ.Статус</Field>
+				<Field>СписокПТУ.СтатусОформление</Field>
+				<Field>СписокПТУ.СтатусЧЗ</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника &gt; 0
+			ТОГДА СписокДокументовПТУ.ПараметрСортировкиБуфер
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника = 0
+				И СписокДокументовПТУ.КоличествоСтрокВБуфереВсего &gt; 0
+			ТОГДА СписокДокументовПТУ.ПараметрСортировкиРазмещения
+		ИНАЧЕ СписокДокументовПТУ.ПараметрСортировкиДокумент
+	КОНЕЦ КАК ПараметрСортировки,
+	ВЫБОР
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника &gt; 0
+			ТОГДА СписокДокументовПТУ.СтрокНеРазмещеноСТР
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника = 0
+				И СписокДокументовПТУ.КоличествоСтрокВБуфереВсего &gt; 0
+			ТОГДА СписокДокументовПТУ.ОсталосьРазместитьСТР
+		ИНАЧЕ СписокДокументовПТУ.ВсегоСтрокСТР
+	КОНЕЦ КАК Количество,
+	СписокДокументовПТУ.НомерДокумента КАК НомерДокумента,
+	НАЧАЛОПЕРИОДА(СписокДокументовПТУ.ДатаДокумента, ДЕНЬ) КАК ДатаДокумента,
+	СписокДокументовПТУ.НомерСкладскогоДокумента КАК НомерСкладскогоДокумента,
+	ВЫБОР
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника &gt; 0
+			ТОГДА "Размещение не завершено"
+		КОГДА СписокДокументовПТУ.КоличествоСтрокВБуфереСотрудника = 0
+				И СписокДокументовПТУ.КоличествоСтрокВБуфереВсего &gt; 0
+			ТОГДА "В работе"
+		КОГДА СписокДокументовПТУ.КоличествоВРазмещении + СписокДокументовПТУ.КоличествоОтсканированныхМаркировок &gt; 0
+			ТОГДА "В работе"
+		ИНАЧЕ "Не начат"
+	КОНЕЦ КАК Статус,
+	СписокДокументовПТУ.Ссылка КАК Ссылка,
+	СписокДокументовПТУ.ЕстьСтрокиВБуфереКладовщика КАК ЕстьСтрокиВБуфереКладовщика,
+	СписокДокументовПТУ.НомерДокументаОформление КАК НомерДокументаОформление,
+	СписокДокументовПТУ.ПриемкаГМ КАК ПриемкаГМ,
+	СписокДокументовПТУ.Контрагент КАК Контрагент,
+	СписокДокументовПТУ.ДокументТребуетсяМаркировка КАК ДокументТребуетсяМаркировка,
+	СписокДокументовПТУ.ЕстьСтрокиВБуфереМаркировок КАК ЕстьСтрокиВБуфереМаркировок,
+	СписокДокументовПТУ.КоличествоОжидаемыхМаркировок КАК КоличествоОжидаемыхМаркировок,
+	СписокДокументовПТУ.КоличествоОтсканированныхМаркировок КАК КоличествоОтсканированныхМаркировок,
+	СписокДокументовПТУ.КоличествоТоваровСМаркировкой КАК КоличествоТоваровСМаркировкой,
+	СписокДокументовПТУ.ПоставкаОтВнешнегоПоставщика КАК ПоставкаОтВнешнегоПоставщика
+ПОМЕСТИТЬ ВТ
+ИЗ
+	РегистрСведений.СписокДокументовПТУ КАК СписокДокументовПТУ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ.ПараметрСортировки КАК ПараметрСортировки,
+	ВТ.Количество КАК Количество,
+	ВТ.НомерДокумента КАК НомерДокумента,
+	ВТ.НомерСкладскогоДокумента КАК НомерСкладскогоДокумента,
+	ВТ.НомерДокументаОформление КАК НомерДокументаОформление,
+	ВТ.ДатаДокумента КАК ДатаДокумента,
+	ВТ.Статус КАК Статус,
+	ВЫРАЗИТЬ(NULL КАК СТРОКА(75)) КАК СтатусОформление,
+	ВЫБОР
+		КОГДА ВТ.ПараметрСортировки = 1
+			ТОГДА "строк не размещено: " + (ВЫРАЗИТЬ(ВТ.Количество КАК СТРОКА(10)))
+		КОГДА ВТ.ПараметрСортировки = 2
+			ТОГДА "осталось разместить: " + (ВЫРАЗИТЬ(ВТ.Количество КАК СТРОКА(10)))
+		ИНАЧЕ "всего строк: " + (ВЫРАЗИТЬ(ВТ.Количество КАК СТРОКА(10)))
+	КОНЕЦ КАК КомментарийКСтатусу,
+	ВТ.Ссылка КАК Ссылка,
+	ВТ.ЕстьСтрокиВБуфереКладовщика КАК ЕстьСтрокиВБуфереКладовщика,
+	ВЫРАЗИТЬ(NULL КАК СТРОКА(10)) КАК Заглушка,
+	ВЫБОР
+		КОГДА ВТ.ПриемкаГМ
+			ТОГДА "Приемка ГМ"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипПриемки,
+	ВТ.Контрагент КАК Контрагент,
+	ВТ.ДокументТребуетсяМаркировка КАК ДокументТребуетсяМаркировка,
+	ВЫБОР
+		КОГДА ВТ.ДокументТребуетсяМаркировка
+			ТОГДА "ЧЗ"
+		ИНАЧЕ ""
+	КОНЕЦ КАК СтатусЧЗ,
+	ВТ.ЕстьСтрокиВБуфереМаркировок КАК ЕстьСтрокиВБуфереМаркировок,
+	ВТ.КоличествоОжидаемыхМаркировок КАК КоличествоОжидаемыхМаркировок,
+	ВТ.КоличествоОтсканированныхМаркировок КАК КоличествоОтсканированныхМаркировок,
+	ВТ.КоличествоТоваровСМаркировкой КАК КоличествоТоваровСМаркировкой,
+	ВТ.ПоставкаОтВнешнегоПоставщика КАК ПоставкаОтВнешнегоПоставщика
+ИЗ
+	ВТ КАК ВТ
+ГДЕ
+	(НЕ &amp;ИспользоватьПоиск
+			ИЛИ &amp;ИспользоватьПоиск
+				И (ВТ.НомерДокумента ПОДОБНО &amp;НомерДокумента
+					ИЛИ ВТ.НомерСкладскогоДокумента ПОДОБНО &amp;НомерДокумента))</QueryText>
+				<KeyType>RowNumber</KeyType>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПараметрСортировки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СтатусЧЗ</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ДокументТребуетсяМаркировка</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Видимость</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СтатусЧЗ</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ДокументТребуетсяМаркировка</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Видимость</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗначениеДляПоиска" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение для поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьДокументыПТУ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить документы ПТУ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить документы ПТУ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДокументыПТУ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Поиск" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поиск</Action>
+		</Command>
+		<Command name="КнТЕНажатие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспортные единицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список транспортных единиц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнТЕНажатие</Action>
+		</Command>
+		<Command name="ПолучитьПТУНаПроверкеВЧЗ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ПТУНа проверке ВЧЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ПТУНа проверке ВЧЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПТУНаПроверкеВЧЗ</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ВсеГрузовыеМеста.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЛогОшибок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПараметрыРаботыСДокументомПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПараметрыРаботыПриПеремещении.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПроверкаЯчеекДляИнвентаризации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.РасширенныйЛог.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокГМДокументаПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокГрузовыхМест.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокГрузовыхМестИзРазгрузкиАвто.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокГрузовыхМестИзРазгрузкиАвтоДляПостановкиНаМаршрут.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокГрузовыхМестСлужебныеЗаписки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокДокументовПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокЗаданийНаДоставку.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокЗаданийНаИнвентаризацию.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокМаршрутовДляПриемкиГрузовыхМест.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокНайденныхТоваровПоШтрихкоду.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокНепроведенныхДокументовПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокОжидаемыхМаркировокДокументаПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокОтсканированныхМаркировокДокументаПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокСборокДляЗаблокированнойЯчейки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокСлужебныхЗаписок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровВБуфереИнвентаризации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровВБуфереМаркировок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровВБуфереПеремещения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровВБуфереРазмещение.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровВБуфереРазмещениеГМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровДляВыбора.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровДокументаПТУ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СписокТоваровЯчейки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ФизическоеЛицо.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.РазделительГруппСлужебные">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.АдресСервераЧестныйЗнак.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ИнвентаризацияПоЯчейкам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.КодМДМГоловнойОрганизации.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЛогОшибок.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.МаркировкаТоваров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.НеРазмещенныеТовары.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОстаткиПоЯчейкам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОстаткиПоЯчейкам_OLD.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ОтображатьМаркировкуТоваров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ОтображатьСлужебныеЗапискиТСД.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПеремещениеТовараИзЯчейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПогрузкаВАвто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПриемкаКоллективная.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.РазделительГруппОбработкиДляМаркировки">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ПроверятьСостояниеКодаВЧЗ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ПроверятьСоответствиеКодаТоваруПоGTIN.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ПутьДоЗвукФайлаОшибки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ПутьДоЗвукЯчейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.РазрешеноПроведениеПТУ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.РазрешитьПриниматьКМБезПроверкиСостояния.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.РасширеннаяПроверкаВалидностиКодовМаркировкиЧЗ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СверятьКодыСОжидаемымиПриПриемке.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ТэгКодаМаркировки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ТэгКодаМаркировкиКонечный.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.РежимВводаКоличества.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.РежимРаботыПриложения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СлужебныеЗаписки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСЗаданиемНаДоставку.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСЗаданиемНаДоставкуИзРазгрузкиАвто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСИнвентаризацииЯчейки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСОстаткамиТоваров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСПеремещениемТовара.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СтатусРаботыСРазмещениемТовара.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ТестКодаМаркировки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ТестированиеВключено.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ТоварыВПути.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.УдалятьЗаписиИзБуферов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ЯчейкаДляВозврата.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ЯчейкаДляМаркировки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ЯчейкаДляПеремаркировки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.РазделительГруппОбработки">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.СчетчикДействий.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="CommonCommand.РазделительГруппСлужебные">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.Timeout.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.Адрес.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.АдресСервераЧестныйЗнак.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИнвентаризацияПоЯчейкам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.КодМДМГоловнойОрганизации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.КоличествоПопытокПодключения.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ЗаписыватьРасширенныеЛоги.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЛогОшибок.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.МаркировкаТоваров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НеРазмещенныеТовары.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОстаткиПоЯчейкам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОстаткиПоЯчейкам_OLD.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ОтображатьМаркировкуТоваров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ОтображатьСлужебныеЗапискиТСД.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПеремещениеТовараИзЯчейки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПогрузкаВАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПриемкаКоллективная.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РазделительГруппОбработкиДляМаркировки">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ПроверятьСостояниеКодаВЧЗ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ПроверятьСоответствиеКодаТоваруПоGTIN.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ПутьДоЗвукФайлаОшибки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ПутьДоЗвукЯчейки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.РазрешеноПроведениеПТУ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.РазрешитьПриниматьКМБезПроверкиСостояния.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.РасширеннаяПроверкаВалидностиКодовМаркировкиЧЗ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СверятьКодыСОжидаемымиПриПриемке.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ТэгКодаМаркировки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ТэгКодаМаркировкиКонечный.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.РежимВводаКоличества.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.РежимРаботыПриложения.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СлужебныеЗаписки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСЗаданиемНаДоставку.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСЗаданиемНаДоставкуИзРазгрузкиАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСИнвентаризацииЯчейки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСОстаткамиТоваров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСПеремещениемТовара.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СтатусРаботыСРазмещениемТовара.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТестКодаМаркировки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ТестированиеВключено.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТоварыВПути.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.УдалятьЗаписиИзБуферов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ЯчейкаДляВозврата.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ЯчейкаДляМаркировки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ЯчейкаДляПеремаркировки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РазделительГруппОбработки">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОткрытьТестКМ">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОткрытьЛогОшибок">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ДополнительныйФункционал.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.СчетчикДействий.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

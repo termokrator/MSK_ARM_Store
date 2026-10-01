@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="d5e27b72-e9ee-4d64-a258-9dec271d2b34">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.РежимРаботыПриложения" category="Ref">
+				<xr:TypeId>6eea2289-2120-4839-b6c3-a9a400418cb0</xr:TypeId>
+				<xr:ValueId>0664a362-ffe8-4ae8-8e98-355e4f445545</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.РежимРаботыПриложения" category="Manager">
+				<xr:TypeId>65a4c9b8-598f-416b-8ce8-a01f314c593a</xr:TypeId>
+				<xr:ValueId>6c277f8e-ef93-42e6-93e9-2cc50dc3efcd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.РежимРаботыПриложения" category="List">
+				<xr:TypeId>d6afb164-d96e-4f6a-ae51-31ed4834288d</xr:TypeId>
+				<xr:ValueId>913a1cb6-8f91-476c-8724-5456b826a9ef</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РежимРаботыПриложения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы приложения</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Developing/Production</v8:content>
+				</v8:item>
+			</Explanation>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="642a6950-507c-4834-b754-eacc451c0635">
+				<Properties>
+					<Name>Developing</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Developing</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f7e43372-6a7f-469d-9510-e40c43dfd21f">
+				<Properties>
+					<Name>Production</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Production</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
