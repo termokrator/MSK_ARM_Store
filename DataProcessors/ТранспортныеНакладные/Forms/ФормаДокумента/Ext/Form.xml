@@ -22,11 +22,13 @@
 				<InputField name="КоличествоМест" id="3">
 					<DataPath>КоличествоМест</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ContextMenu name="КоличествоМестКонтекстноеМеню" id="4"/>
 					<ExtendedTooltip name="КоличествоМестРасширеннаяПодсказка" id="5"/>
 				</InputField>
 				<InputField name="КоличествоМестФакт" id="6">
 					<DataPath>КоличествоМестФакт</DataPath>
+					<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ContextMenu name="КоличествоМестФактКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="КоличествоМестФактРасширеннаяПодсказка" id="8"/>
 				</InputField>
