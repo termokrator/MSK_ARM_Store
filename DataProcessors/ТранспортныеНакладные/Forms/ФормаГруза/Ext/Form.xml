@@ -50,13 +50,19 @@
 			<ChildItems>
 				<InputField name="ГрузНаименование" id="14">
 					<DataPath>Груз.Наименование</DataPath>
-					<Width>3</Width>
+					<Width>21</Width>
 					<ContextMenu name="ГрузНаименованиеКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ГрузНаименованиеРасширеннаяПодсказка" id="16"/>
 				</InputField>
 				<InputField name="ГрузВесБрутто" id="23">
 					<DataPath>Груз.ВесБрутто</DataPath>
-					<Width>1</Width>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Width>6</Width>
 					<ContextMenu name="ГрузВесБруттоКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="ГрузВесБруттоРасширеннаяПодсказка" id="25"/>
 				</InputField>
