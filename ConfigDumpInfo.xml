@@ -782,6 +782,26 @@
 			<Metadata name="InformationRegister.ФизическоеЛицо.Resource.ДатаЗагрузки" id="9bc83a2a-ba54-492f-80e5-ac170e2e219f"/>
 			<Metadata name="InformationRegister.ФизическоеЛицо.Dimension.ФизическоеЛицоГУИД" id="e6887806-86b8-496d-929d-8d019d802bd3"/>
 		</Metadata>
+		<Metadata name="DataProcessor.ТранспортныеНакладные" id="bef1d48b-4bd6-478c-bc9d-739e82c465aa" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза" id="c7b161c9-ee59-48df-abcf-ef9af131d484" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза.Form" id="c7b161c9-ee59-48df-abcf-ef9af131d484.0" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента.Form" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5.0" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка" id="66fec6ad-480e-4f39-8272-967200e0ddba" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка.Form" id="66fec6ad-480e-4f39-8272-967200e0ddba.0" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="InformationRegister.ПериодТранспортныхНакладных" id="8e9ecf9e-c7db-42c5-a748-7c760a7c99ff" configVersion="0000000000000000000000000000000000000000">
+			<Metadata name="InformationRegister.ПериодТранспортныхНакладных.Resource.ДатаНачала" id="f99e3b56-ac9f-4462-a1ed-18d42a396379"/>
+			<Metadata name="InformationRegister.ПериодТранспортныхНакладных.Resource.ДатаОкончания" id="eeef6679-0ace-4483-a5d4-343ddfa86591"/>
+			<Metadata name="InformationRegister.ПериодТранспортныхНакладных.Resource.Установлен" id="2710acd1-651f-4dde-983b-1ec1e8995afd"/>
+			<Metadata name="InformationRegister.ПериодТранспортныхНакладных.Dimension.ПользовательГУИД" id="8aead0c6-1cda-459f-a7a5-d48f762d0db7"/>
+		</Metadata>
+		<Metadata name="InformationRegister.СписокТранспортныхНакладных" id="07849cfd-f1cb-4d58-8bff-69fc85213701" configVersion="0000000000000000000000000000000000000000">
+			<Metadata name="InformationRegister.СписокТранспортныхНакладных.Resource.Контрагент" id="d981270f-2691-4377-88d3-1a92533b8b43"/>
+			<Metadata name="InformationRegister.СписокТранспортныхНакладных.Resource.Номер" id="abb7ef2e-8ecf-466f-891c-55d3d9b5d912"/>
+			<Metadata name="InformationRegister.СписокТранспортныхНакладных.Resource.Дата" id="a53e47c2-4abe-4807-b475-d4d667702f3e"/>
+			<Metadata name="InformationRegister.СписокТранспортныхНакладных.Resource.ДатаЗагрузки" id="cb6a291f-a94d-40b7-82d2-a809ccb99599"/>
+			<Metadata name="InformationRegister.СписокТранспортныхНакладных.Dimension.Идентификатор" id="59502e76-881c-4a95-8718-29897709b913"/>
+		</Metadata>
 		<Metadata name="Language.Русский" id="cdc784ea-6e10-418a-a9a7-55321b0323ed" configVersion="dfab17341b38be459caef87f8f81a8c000000000"/>
 		<Metadata name="SessionParameter.ПутьДоЗвуковогоФайлаОшибки" id="5ac795e7-f9b1-4d9e-b1ef-7ef9c76357dd" configVersion="739efe23c3e6694c8176f8b40d41a02c00000000"/>
 		<Metadata name="SessionParameter.ПутьДоЗвуковогоФайлаЯчейки" id="b8b53e5d-1deb-4873-8aa6-7c9b629dee58" configVersion="8e14cd02b88f3b43a2720f1c727e84eb00000000"/>
