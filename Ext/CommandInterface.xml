@@ -151,16 +151,6 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="InformationRegister.СписокТранспортныхНакладных.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="InformationRegister.ПериодТранспортныхНакладных.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
 		<Command name="Constant.АдресСервераЧестныйЗнак.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -297,11 +287,6 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ТоварыВПути.StandardCommand.Open">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DataProcessor.ТранспортныеНакладные.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
