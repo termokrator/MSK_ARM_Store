@@ -25,8 +25,8 @@
 		<Metadata name="CommonModule.ОбработкаШтрихкодаАвтоматический.Module" id="cdf3e571-4e00-4ff8-bccc-620f6407ff89.0" configVersion="e699c8d0e8905a479b3663fafae9b74700000000"/>
 		<Metadata name="CommonModule.ОбработкаШтрихкодаРучной" id="558685da-7f8b-4b22-9e4c-b937145fb525" configVersion="af649b52ff013641b37a019c4b9e071d00000000"/>
 		<Metadata name="CommonModule.ОбработкаШтрихкодаРучной.Module" id="558685da-7f8b-4b22-9e4c-b937145fb525.0" configVersion="a69c797f97adf044a833dd1b5a33f60e00000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначения" id="c52f2fde-bcef-49ec-8534-c114571fdf9f" configVersion="d4cc35d1ffcd234c92781ebc37a499cb00000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="c52f2fde-bcef-49ec-8534-c114571fdf9f.0" configVersion="b74c21fd4887e549aa03eaae761fb6c600000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения" id="c52f2fde-bcef-49ec-8534-c114571fdf9f" configVersion="7fd6e8b1cb2e8349be9016085471857100000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="c52f2fde-bcef-49ec-8534-c114571fdf9f.0" configVersion="2211415b4a1b664b80e2ace9a3d8fec100000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения_WSСсылки" id="a139c506-6c0b-4961-8520-ec4fe28dfd28" configVersion="f01f1f82b524ad4e8c9e31aa59e1b42800000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения_WSСсылки.Module" id="a139c506-6c0b-4961-8520-ec4fe28dfd28.0" configVersion="048afbfaecf2cf48b4db80cb458cde8900000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияКлиент" id="89701843-f72f-4e61-bfa1-afeff9f36ca7" configVersion="d61b6b683786264eb06f1021f30c941200000000"/>
@@ -317,13 +317,13 @@
 		<Metadata name="DataProcessor.ТранспортныеЕдиницы" id="5b8785c5-056c-44ea-9245-34dba4b25914" configVersion="1ea8897e9c45024d9258e5fbdca5e51a00000000"/>
 		<Metadata name="DataProcessor.ТранспортныеЕдиницы.Form.ФормаТранспортныхЕдиниц" id="6c4932ad-02a1-48cf-8719-6fdc7612ebb0" configVersion="83b7a8e37e4bd24a911f2a95d16b9b9b00000000"/>
 		<Metadata name="DataProcessor.ТранспортныеЕдиницы.Form.ФормаТранспортныхЕдиниц.Form" id="6c4932ad-02a1-48cf-8719-6fdc7612ebb0.0" configVersion="e50480e4d1df7344bec8f5e6a231976a00000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные" id="bef1d48b-4bd6-478c-bc9d-739e82c465aa" configVersion="93975bcde658804485a64729e587c30900000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза" id="c7b161c9-ee59-48df-abcf-ef9af131d484" configVersion="80cadc35b49cfb4e9bd19d9d8ad85a7700000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза.Form" id="c7b161c9-ee59-48df-abcf-ef9af131d484.0" configVersion="582392d40187a24db6380aecf9f6bada00000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5" configVersion="375398267f3c5244b3af7570ec7f886a00000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента.Form" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5.0" configVersion="cc8240153f1461458c5850cd9e4772dd00000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка" id="66fec6ad-480e-4f39-8272-967200e0ddba" configVersion="531565fa9083784381d9a67f1a90c5c500000000"/>
-		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка.Form" id="66fec6ad-480e-4f39-8272-967200e0ddba.0" configVersion="93bd8b415c764b4facc794f8d259a76700000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные" id="bef1d48b-4bd6-478c-bc9d-739e82c465aa" configVersion="555a60a46c0e754e99ee769ca9f4494e00000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза" id="c7b161c9-ee59-48df-abcf-ef9af131d484" configVersion="6937be97ada79544ab38966a86c584aa00000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаГруза.Form" id="c7b161c9-ee59-48df-abcf-ef9af131d484.0" configVersion="2e80d214dcce284e917840bac0d089a200000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5" configVersion="17f73ffe3d5a0e42818e409a01c85ff600000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаДокумента.Form" id="45ccdbc7-9ac8-4517-8cdb-7770dd21eff5.0" configVersion="9f15b848e0386444b6d8839d4f13939000000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка" id="66fec6ad-480e-4f39-8272-967200e0ddba" configVersion="882b21cd925472418ebf998e69bc7d9600000000"/>
+		<Metadata name="DataProcessor.ТранспортныеНакладные.Form.ФормаСписка.Form" id="66fec6ad-480e-4f39-8272-967200e0ddba.0" configVersion="fc5c7b70c961334089dcbd756de7392600000000"/>
 		<Metadata name="Enum.РежимВводаКоличества" id="169080f2-0ee3-44f1-ad4f-c0f4a06cbc98" configVersion="a0caf21716cefc4da4e9dbfaf0af4bb100000000">
 			<Metadata name="Enum.РежимВводаКоличества.EnumValue.Автоматический" id="2282677b-5371-40f6-a7d8-288efb9ea1b3"/>
 			<Metadata name="Enum.РежимВводаКоличества.EnumValue.Ручной" id="bf5cdc36-1aa9-4b57-b700-6bd94e6a43aa"/>

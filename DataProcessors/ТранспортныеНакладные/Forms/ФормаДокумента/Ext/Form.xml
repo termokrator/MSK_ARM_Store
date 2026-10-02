@@ -6,6 +6,7 @@
 			<v8:content>Транспортная накладная</v8:content>
 		</v8:item>
 	</Title>
+	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -28,6 +29,7 @@
 				</InputField>
 				<InputField name="КоличествоМестФакт" id="6">
 					<DataPath>КоличествоМестФакт</DataPath>
+					<TextColor>web:Green</TextColor>
 					<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ContextMenu name="КоличествоМестФактКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="КоличествоМестФактРасширеннаяПодсказка" id="8"/>
@@ -50,6 +52,7 @@
 		</LabelDecoration>
 		<InputField name="СостояниеГруза" id="17">
 			<DataPath>СостояниеГруза</DataPath>
+			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="СостояниеГрузаКонтекстноеМеню" id="18"/>
 			<ExtendedTooltip name="СостояниеГрузаРасширеннаяПодсказка" id="19"/>
 		</InputField>
