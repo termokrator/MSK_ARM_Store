@@ -82,10 +82,10 @@
 		<Metadata name="CommonTemplate.СообщениеОНеПеремещенныхТоваров" id="85b5a267-34b2-4efb-a7cd-ad2835ff96a9" configVersion="6d331b8d9e9dcd43a5f3c579f35985ab00000000"/>
 		<Metadata name="CommonTemplate.СообщениеОНеПеремещенныхТоваров.Template" id="85b5a267-34b2-4efb-a7cd-ad2835ff96a9.0" configVersion="92569d16839f4743be940d58018e371700000000"/>
 		<Metadata name="Configuration.ARMStoreKeeper" id="8ff0c7bf-a33f-47d2-bfb7-32d4b7f32178" configVersion="4cc91fe11b1e00468fd9013a3728d57a00000000"/>
-		<Metadata name="Configuration.ARMStoreKeeper.CommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.a" configVersion="faa1b5fdb365c8418ff323bc98c4a17f00000000"/>
-		<Metadata name="Configuration.ARMStoreKeeper.HomePageWorkArea" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.8" configVersion="7fa8770df612444b9a436028c6098c4f00000000"/>
-		<Metadata name="Configuration.ARMStoreKeeper.MainSectionCommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.9" configVersion="2a7bf2f17e5b2141861e503a4506812f00000000"/>
-		<Metadata name="Configuration.ARMStoreKeeper.ManagedApplicationModule" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.6" configVersion="e7dd7b48b4916246950b570ce0ea876c00000000"/>
+		<Metadata name="Configuration.ARMStoreKeeper.CommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.a" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="Configuration.ARMStoreKeeper.HomePageWorkArea" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.8" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="Configuration.ARMStoreKeeper.MainSectionCommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.9" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="Configuration.ARMStoreKeeper.ManagedApplicationModule" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.6" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="Constant.Timeout" id="2d0fc742-c516-4ef7-aa64-597f141ea105" configVersion="c8138e40843f874488f46b86bb3ecf3500000000"/>
 		<Metadata name="Constant.Адрес" id="b9ab377c-2c78-4314-8cf7-358904c2711b" configVersion="84440db06753ed4abca028a783debcce00000000"/>
 		<Metadata name="Constant.АдресСервераЧестныйЗнак" id="6e51370a-2ef2-489d-a98e-130a83336165" configVersion="cfd27f1e2d8f5a48aa5a36f4dcae63f900000000"/>
