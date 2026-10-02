@@ -274,7 +274,6 @@
 			<CommonTemplate>ЗвуковойФайлОшибки</CommonTemplate>
 			<CommonTemplate>ЗвуковойФайлЯчейки</CommonTemplate>
 			<CommonTemplate>СообщениеОНеПеремещенныхТоваров</CommonTemplate>
-			<CommonTemplate>Макет1</CommonTemplate>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ПараметрыПодключения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>

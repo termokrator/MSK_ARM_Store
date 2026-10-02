@@ -77,13 +77,11 @@
 		<Metadata name="CommonTemplate.ЗвуковойФайлЯчейки.Template" id="f777e3be-013e-44a1-8b37-883284039958.0" configVersion="5a800644f580384c9359660bcff32ba100000000"/>
 		<Metadata name="CommonTemplate.Макет" id="8da8c516-92fc-42bf-8b3e-dc2c5beb8ef2" configVersion="86d40b8d74d8a0408ee180ac081477e900000000"/>
 		<Metadata name="CommonTemplate.Макет.Template" id="8da8c516-92fc-42bf-8b3e-dc2c5beb8ef2.0" configVersion="f6f3e0643c818d4f990f0f9c4e8b5eb500000000"/>
-		<Metadata name="CommonTemplate.Макет1" id="0bb946c4-5660-436b-b880-dfa3ad93af92" configVersion="c04803def70d6a48adafe6effc6e2c7000000000"/>
-		<Metadata name="CommonTemplate.Макет1.Template" id="0bb946c4-5660-436b-b880-dfa3ad93af92.0" configVersion="b0977f9a5bb5bb45a4bc17aa8e0a512a00000000"/>
 		<Metadata name="CommonTemplate.ОписаниеВозращаемыхЗначений" id="bf4e189d-2542-4ba5-aa00-90006e6df0c7" configVersion="70b05efdbc17ff4f8aa05befcb19446700000000"/>
 		<Metadata name="CommonTemplate.ОписаниеВозращаемыхЗначений.Template" id="bf4e189d-2542-4ba5-aa00-90006e6df0c7.0" configVersion="c8523f1a81289d45b6a10f42ad5a5c8800000000"/>
 		<Metadata name="CommonTemplate.СообщениеОНеПеремещенныхТоваров" id="85b5a267-34b2-4efb-a7cd-ad2835ff96a9" configVersion="1aaabfbfe398fe40b1737841a8490d3b00000000"/>
 		<Metadata name="CommonTemplate.СообщениеОНеПеремещенныхТоваров.Template" id="85b5a267-34b2-4efb-a7cd-ad2835ff96a9.0" configVersion="07151f9d6acbc142a11d7c07a36c506200000000"/>
-		<Metadata name="Configuration.ARMStoreKeeper" id="8ff0c7bf-a33f-47d2-bfb7-32d4b7f32178" configVersion="02796add5de91f4a85d31339591e111500000000"/>
+		<Metadata name="Configuration.ARMStoreKeeper" id="8ff0c7bf-a33f-47d2-bfb7-32d4b7f32178" configVersion="18dd8c958c3f5f49abb088def5bd7a4900000000"/>
 		<Metadata name="Configuration.ARMStoreKeeper.CommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.a" configVersion="5f6d7f23a8130844a46f7e487feec0b200000000"/>
 		<Metadata name="Configuration.ARMStoreKeeper.HomePageWorkArea" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.8" configVersion="d7789bef4a66a14895e437fe8b2648ad00000000"/>
 		<Metadata name="Configuration.ARMStoreKeeper.MainSectionCommandInterface" id="581c3841-c34b-4dd0-b6c1-b4b0f31834fe.9" configVersion="36b4e968e380a04bb310bd5579d691ef00000000"/>
