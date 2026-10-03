@@ -1,0 +1,15 @@
+# OneSync: не коммитить файлы вне выгрузки и больше лимита GitHub 100 МБ
+*.cf
+*.cfe
+*.cfu
+*.zip
+*.rar
+*.log
+*.tmp
+*.bak
+*.bin
+!**/Form.bin
+!**/Template.bin
+!**/Interface.bin
+!**/ParentConfigurations.bin
+!**/Flowchart.bin
