@@ -356,42 +356,6 @@
 						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаТранспортныеНакладные" id="200">
-					<Height>2</Height>
-					<Group>AlwaysHorizontal</Group>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаТранспортныеНакладныеРасширеннаяПодсказка" id="201"/>
-					<ChildItems>
-						<PictureDecoration name="ДекорацияТранспортныеНакладные" id="202">
-							<Width>6</Width>
-							<Height>2</Height>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Декорация транспортные накладные</v8:content>
-								</v8:item>
-							</Title>
-							<Hyperlink>true</Hyperlink>
-							<PictureSize>Proportionally</PictureSize>
-							<Picture>
-								<xr:Ref>CommonPicture.ТоварыВПути</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="ДекорацияТранспортныеНакладныеКонтекстноеМеню" id="203"/>
-							<ExtendedTooltip name="ДекорацияТранспортныеНакладныеРасширеннаяПодсказка" id="204"/>
-							<Events>
-								<Event name="Click">ДекорацияТранспортныеНакладныеНажатие</Event>
-							</Events>
-						</PictureDecoration>
-						<Button name="ТранспортныеНакладные" id="205">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ТранспортныеНакладные</CommandName>
-							<TextColor>web:Black</TextColor>
-							<Font ref="style:NormalTextFont" height="14" kind="StyleItem" scale="100"/>
-							<ExtendedTooltip name="ТранспортныеНакладныеРасширеннаяПодсказка" id="206"/>
-						</Button>
-					</ChildItems>
-				</UsualGroup>
 				<UsualGroup name="Группа9" id="83">
 					<Group>AlwaysHorizontal</Group>
 					<ShowTitle>false</ShowTitle>
@@ -747,21 +711,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТоварыВПути</Action>
-		</Command>
-		<Command name="ТранспортныеНакладные" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Транспортные накладные</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Транспортные накладные</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ТранспортныеНакладные</Action>
 		</Command>
 		<Command name="СлужебныеЗаписки" id="12">
 			<Title>
