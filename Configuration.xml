@@ -358,6 +358,7 @@
 			<DataProcessor>ТоварыВПути</DataProcessor>
 			<DataProcessor>ТестКодаМаркировки</DataProcessor>
 			<DataProcessor>ТранспортныеЕдиницы</DataProcessor>
+			<DataProcessor>ТранспортныеНакладные</DataProcessor>
 			<InformationRegister>ВсеГрузовыеМеста</InformationRegister>
 			<InformationRegister>ЛогОшибок</InformationRegister>
 			<InformationRegister>РасширенныйЛог</InformationRegister>
@@ -391,6 +392,8 @@
 			<InformationRegister>СписокТоваровЯчейки</InformationRegister>
 			<InformationRegister>ФизическоеЛицо</InformationRegister>
 			<InformationRegister>СписокТранспортныхЕдиниц</InformationRegister>
+			<InformationRegister>СписокТранспортныхНакладных</InformationRegister>
+			<InformationRegister>ПериодТранспортныхНакладных</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
